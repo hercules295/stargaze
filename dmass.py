@@ -42,4 +42,4 @@ async def send(ctx, *, content: str):
              
 
 
-client.run("YOUR BOT'S TOKEN HERE")                
+client.run("NzEwMTg0MzY2NTI1MTIwNjA0.XrwxFg.SxYuiO2KfEfGgBiOwjMqB7V22qE")                
