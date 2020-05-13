@@ -8,7 +8,7 @@ import colorsys
 import random
 import time
 
-client = commands.Bot(command_prefix = '+', case_insensitive=True)
+client = commands.Bot(command_prefix = '$', case_insensitive=True)
 Client = discord.client
 Clientdiscord = discord.Client()
 
@@ -36,12 +36,10 @@ async def userinfo(ctx, user: discord.Member):
 @client.command(pass_context = True)
 async def send(ctx, *, content: str):
         for member in ctx.message.server.members:
-            try:
-                await client.send_message(member, content)
-                await client.say("DM Sent To : {} :white_check_mark:  ".format(member))
-            except:
-                print("can't")
-                await client.say("DM can't Sent To : {} :x: ".format(member))
+			 await client.send_message(member, content)
+		
+            
+             
 
 
 client.run("YOUR BOT'S TOKEN HERE")                
